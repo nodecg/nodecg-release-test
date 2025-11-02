@@ -37,6 +37,10 @@
     "typescript": "~5.7.3",
     "npm-run-all2": "^7.0.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hoishin/nodecg-release-test.git"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public",
