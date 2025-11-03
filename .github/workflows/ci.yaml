@@ -141,8 +141,6 @@ jobs:
           config-file: release-please-config.json
 
   update-release-pr:
-    permissions:
-      contents: write
     needs:
       - release-please
     if: ${{ needs.release-please.outputs.pr }}
