@@ -162,7 +162,7 @@ jobs:
           git config --global user.email "ci@nodecg.dev"
           git config --global user.name "NodeCG"
       - run: |
-          npm install
+          npm ci
           if git diff --quiet package-lock.json; then
             git commit -m "chore: run CI" --allow-empty
             git push
