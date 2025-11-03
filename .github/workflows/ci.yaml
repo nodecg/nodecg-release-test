@@ -140,7 +140,7 @@ jobs:
         with:
           config-file: release-please-config.json
 
-  update-lock-file:
+  update-release-pr:
     permissions:
       contents: write
     needs:
@@ -162,9 +162,11 @@ jobs:
       - run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
+      - run: |
           npm install
           if git diff --quiet package-lock.json; then
-            echo "lock file is up to date"
+            git commit -m "chore: run CI" --allow-empty
+            git push
           else
             git add package-lock.json
             git commit -m "chore: update package-lock.json"
