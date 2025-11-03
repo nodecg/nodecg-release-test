@@ -88,7 +88,7 @@ jobs:
       id-token: write
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    environment: PR Release
+    environment: pr-release
     needs:
       - lint
       - test-types
