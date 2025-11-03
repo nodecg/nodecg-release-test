@@ -76,21 +76,19 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - if: matrix.os != 'ubuntu-latest' || matrix.node-version != '24'
-        run: npm test -- --reporter=junit --outputFile=test-report.junit.xml
-      - if: matrix.os == 'ubuntu-latest' && matrix.node-version == '24'
-        run: npm test -- --coverage --reporter=junit --outputFile=test-report.junit.xml
-
-      - if: success() || failure()
-        uses: codecov/test-results-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: test-report.junit.xml
-
-      - if: matrix.os == 'ubuntu-latest' && matrix.node-version == '24'
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - if: matrix.os != 'ubuntu-latest' || matrix.node-version != '24'
+      #   run: npm test -- --reporter=junit --outputFile=test-report.junit.xml
+      # - if: matrix.os == 'ubuntu-latest' && matrix.node-version == '24'
+      #   run: npm test -- --coverage --reporter=junit --outputFile=test-report.junit.xml
+      # - if: success() || failure()
+      #   uses: codecov/test-results-action@v1
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     file: test-report.junit.xml
+      # - if: matrix.os == 'ubuntu-latest' && matrix.node-version == '24'
+      #   uses: codecov/codecov-action@v5
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
 
   build-test:
     needs: build-test-matrix

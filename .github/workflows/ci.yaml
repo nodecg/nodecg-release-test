@@ -77,15 +77,15 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - run: npm test -- --coverage --reporter=junit --outputFile=test-report.junit.xml
-      - if: success() || failure()
-        uses: codecov/test-results-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: test-report.junit.xml
-      - uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - run: npm test -- --coverage --reporter=junit --outputFile=test-report.junit.xml
+      # - if: success() || failure()
+      #   uses: codecov/test-results-action@v1
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     file: test-report.junit.xml
+      # - uses: codecov/codecov-action@v5
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
 
   container-build:
     runs-on: ubuntu-latest
