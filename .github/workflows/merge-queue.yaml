@@ -32,7 +32,7 @@ jobs:
       - run: npm run build
       - run: npm run typetest
 
-  build-test:
+  build-test-matrix:
     strategy:
       matrix:
         node-version:
@@ -75,8 +75,13 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+  build-test:
+    needs: build-test-matrix
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ok"
 
-  container-build:
+  container-build-matrix:
     strategy:
       matrix:
         os:
@@ -92,3 +97,8 @@ jobs:
           push: false
           cache-from: type=gha
           cache-to: type=gha,mode=max
+  container-build:
+    needs: container-build-matrix
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ok"

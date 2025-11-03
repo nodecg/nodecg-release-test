@@ -77,7 +77,10 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - run: echo 'add tests'
+  container-build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "runs in merge queue"
 
   pr-release:
     permissions:
