@@ -153,6 +153,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
+      - run: gh auth setup-git
       - run: gh pr checkout ${{ fromJson(needs.release-please.outputs.pr).number }}
       - uses: actions/setup-node@v6
         with:
