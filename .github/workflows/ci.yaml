@@ -78,7 +78,7 @@ jobs:
       - run: npm run build
 
       - run: npm test -- --coverage --reporter=junit --outputFile=test-report.junit.xml
-      - if: (success() || failure())
+      - if: success() || failure()
         uses: codecov/test-results-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
