@@ -148,7 +148,7 @@ jobs:
     if: ${{ needs.release-please.outputs.pr }}
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.NODECG_MONOREPO_GH_TOKEN}}
+      GH_TOKEN: ${{ secrets.NODECG_MONOREPO_GH_TOKEN }}
     steps:
       - uses: actions/checkout@v5
         with:
