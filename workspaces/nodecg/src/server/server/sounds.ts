@@ -1,6 +1,6 @@
 import * as path from "node:path";
 
-import { rootPaths } from "@nodecg/internal-util";
+import { rootPaths } from "@nodecg-release-test/internal-util";
 import { Effect } from "effect";
 import express from "express";
 import hasha from "hasha";

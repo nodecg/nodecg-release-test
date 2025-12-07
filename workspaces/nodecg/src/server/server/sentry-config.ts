@@ -1,7 +1,7 @@
 import * as os from "node:os";
 import * as path from "node:path";
 
-import { rootPaths } from "@nodecg/internal-util";
+import { rootPaths } from "@nodecg-release-test/internal-util";
 import * as Sentry from "@sentry/node";
 import { Effect, Stream } from "effect";
 import express from "express";

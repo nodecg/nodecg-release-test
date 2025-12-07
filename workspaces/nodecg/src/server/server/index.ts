@@ -32,8 +32,8 @@ if (config.sentry?.enabled) {
 import fs = require("fs");
 import path = require("path");
 
-import { databaseAdapter as defaultAdapter } from "@nodecg/database-adapter-sqlite-legacy";
-import { rootPaths } from "@nodecg/internal-util";
+import { databaseAdapter as defaultAdapter } from "@nodecg-release-test/database-adapter-sqlite-legacy";
+import { rootPaths } from "@nodecg-release-test/internal-util";
 import bodyParser from "body-parser";
 import compression from "compression";
 import { Data, Deferred, Effect, Runtime, Stream } from "effect";

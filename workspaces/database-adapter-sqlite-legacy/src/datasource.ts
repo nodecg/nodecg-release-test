@@ -1,6 +1,6 @@
 import path from "node:path";
 
-import { rootPaths } from "@nodecg/internal-util";
+import { rootPaths } from "@nodecg-release-test/internal-util";
 import sqlite3 from "better-sqlite3";
 import { DataSource } from "typeorm";
 

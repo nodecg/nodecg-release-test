@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { isLegacyProject, rootPaths } from "@nodecg/internal-util";
+import { isLegacyProject, rootPaths } from "@nodecg-release-test/internal-util";
 import { Effect } from "effect";
 import express from "express";
 
