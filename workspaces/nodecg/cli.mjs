@@ -3,3 +3,4 @@
 import "@nodecg-release-test/cli";
 
 // hi
+// ho
