@@ -1,5 +1,13 @@
 # Changelog
 
+## [20.0.1](https://github.com/nodecg/nodecg-release-test/compare/nodecg-v20.0.0...nodecg-v20.0.1) (2025-12-07)
+
+
+### Bug Fixes
+
+* hi ([d2eb2ae](https://github.com/nodecg/nodecg-release-test/commit/d2eb2ae3ba67c779b1fba288acc3717d74d121f2))
+* ok ([5bdc8ab](https://github.com/nodecg/nodecg-release-test/commit/5bdc8ab0745130a6bd3e27668afc8ed7c325b1ab))
+
 ## [2.6.4](https://github.com/nodecg/nodecg/compare/nodecg-v2.6.3...nodecg-v2.6.4) (2025-11-22)
 
 
