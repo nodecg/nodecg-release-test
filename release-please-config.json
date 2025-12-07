@@ -7,8 +7,7 @@
 	"plugins": [
 		{
 			"type": "node-workspace",
-			"updatePeerDependencies": true,
-			"merge": false
+			"updatePeerDependencies": true
 		},
 		{
 			"type": "linked-versions",
