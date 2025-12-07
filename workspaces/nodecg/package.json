@@ -1,5 +1,5 @@
 {
-  "name": "nodecg",
+  "name": "@nodecg-release-test/nodecg",
   "version": "2.6.4",
   "description": "Dynamic broadcast graphics rendered in a browser",
   "keywords": [
