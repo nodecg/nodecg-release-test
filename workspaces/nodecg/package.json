@@ -1,6 +1,6 @@
 {
   "name": "@nodecg-release-test/nodecg",
-  "version": "20.0.1",
+  "version": "20.0.2",
   "description": "Dynamic broadcast graphics rendered in a browser",
   "keywords": [
     "graphics",
