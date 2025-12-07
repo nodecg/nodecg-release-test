@@ -1,6 +1,6 @@
 {
   "name": "@nodecg-release-test/database-adapter-sqlite-legacy",
-  "version": "7.1.0",
+  "version": "20.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/nodecg/nodecg-release-test.git",
