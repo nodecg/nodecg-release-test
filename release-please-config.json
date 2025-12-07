@@ -8,6 +8,11 @@
 		{
 			"type": "node-workspace",
 			"updatePeerDependencies": true
+		},
+		{
+			"type": "linked-versions",
+			"groupName": "nodecg",
+			"components": ["cli", "nodecg"]
 		}
 	],
 	"packages": {
@@ -16,8 +21,12 @@
 		},
 		"workspaces/database-adapter-types": {},
 		"workspaces/database-adapter-sqlite-legacy": {},
-		"workspaces/cli": {},
-		"workspaces/nodecg": {}
+		"workspaces/cli": {
+			"component": "cli"
+		},
+		"workspaces/nodecg": {
+			"component": "nodecg"
+		}
 	},
 	"bootstrap-sha": "336f2dd77ec50c193503330a5957c81bb0261af6"
 }
