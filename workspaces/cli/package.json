@@ -1,6 +1,6 @@
 {
   "name": "@nodecg-release-test/cli",
-  "version": "15.5.0",
+  "version": "20.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodecg/nodecg-release-test.git",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7.2.1",
-    "@nodecg-release-test/internal-util": "6.1.0",
+    "@nodecg-release-test/internal-util": "20.1.0",
     "ajv": "^8.17.1",
     "chalk": "^5.4.1",
     "commander": "^13.0.0",
