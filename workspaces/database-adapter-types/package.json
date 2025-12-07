@@ -1,9 +1,9 @@
 {
-  "name": "@nodecg/database-adapter-types",
-  "version": "2.7.0",
+  "name": "@nodecg-release-test/database-adapter-types",
+  "version": "6.1.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodecg/nodecg.git",
+    "url": "https://github.com/nodecg/nodecg-release-test.git",
     "directory": "workspaces/database-adapter-types"
   },
   "type": "module",

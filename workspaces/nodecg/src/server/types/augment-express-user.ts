@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
 
-import type { User } from "@nodecg/database-adapter-types";
+import type { User } from "@nodecg-release-test/database-adapter-types";
 
 interface UserModel extends User {}
 

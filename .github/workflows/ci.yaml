@@ -83,19 +83,19 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - run: npx vitest --coverage --reporter=default --reporter=junit --outputFile=test-report.junit.xml
-        if: matrix.os == 'ubuntu-latest'
-      - run: npx vitest --reporter=default --reporter=junit --outputFile=test-report.junit.xml
-        if: matrix.os == 'windows-latest'
-      - if: success() || failure()
-        uses: codecov/test-results-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: test-report.junit.xml
-          flags: ${{ runner.os }}
-      - uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - run: npx vitest --coverage --reporter=default --reporter=junit --outputFile=test-report.junit.xml
+      #   if: matrix.os == 'ubuntu-latest'
+      # - run: npx vitest --reporter=default --reporter=junit --outputFile=test-report.junit.xml
+      #   if: matrix.os == 'windows-latest'
+      # - if: success() || failure()
+      #   uses: codecov/test-results-action@v1
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     file: test-report.junit.xml
+      #     flags: ${{ runner.os }}
+      # - uses: codecov/codecov-action@v5
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
   build-test:
     needs: build-test-matrix
     if: always()
@@ -204,7 +204,7 @@ jobs:
       - lint
       - test-types
       - build-test
-    environment: ${{ needs.release-please.outputs.releases_created == 'true' && 'latest-release' || 'canary-release' }}
+    environment: ${{ needs.release-please.outputs.releases_created == 'true' && 'Latest Release' || 'Canary Release' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5

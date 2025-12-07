@@ -1,9 +1,9 @@
 {
-  "name": "@nodecg/cli",
-  "version": "2.7.1",
+  "name": "@nodecg-release-test/cli",
+  "version": "15.5.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodecg/nodecg.git",
+    "url": "git+https://github.com/nodecg/nodecg-release-test.git",
     "directory": "workspaces/cli"
   },
   "type": "module",

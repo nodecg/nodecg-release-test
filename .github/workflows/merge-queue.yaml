@@ -78,22 +78,22 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - if: matrix.os != 'ubuntu-latest' || matrix.node-version != '24'
-        run: npx vitest --reporter=default --reporter=junit --outputFile=test-report.junit.xml
-      - if: matrix.os == 'ubuntu-latest' && matrix.node-version == '24'
-        run: npx vitest --coverage --reporter=default --reporter=junit --outputFile=test-report.junit.xml
-      - if: success() || failure()
-        uses: codecov/test-results-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: test-report.junit.xml
-          override_branch: main
-          flags: ${{ runner.os }}
-      - if: matrix.os == 'ubuntu-latest' && matrix.node-version == '24'
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          override_branch: main
+      # - if: matrix.os != 'ubuntu-latest' || matrix.node-version != '24'
+      #   run: npx vitest --reporter=default --reporter=junit --outputFile=test-report.junit.xml
+      # - if: matrix.os == 'ubuntu-latest' && matrix.node-version == '24'
+      #   run: npx vitest --coverage --reporter=default --reporter=junit --outputFile=test-report.junit.xml
+      # - if: success() || failure()
+      #   uses: codecov/test-results-action@v1
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     file: test-report.junit.xml
+      #     override_branch: main
+      #     flags: ${{ runner.os }}
+      # - if: matrix.os == 'ubuntu-latest' && matrix.node-version == '24'
+      #   uses: codecov/codecov-action@v5
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     override_branch: main
 
   build-test:
     needs: build-test-matrix

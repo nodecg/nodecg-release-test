@@ -1,10 +1,9 @@
 {
   "name": "nodecg-monorepo",
-  "version": "2.6.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodecg/nodecg.git"
+    "url": "https://github.com/nodecg/nodecg-release-test.git"
   },
   "license": "MIT",
   "type": "module",

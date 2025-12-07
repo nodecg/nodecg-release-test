@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-namespace */
-import type { DatabaseAdapter } from "@nodecg/database-adapter-types";
+import type { DatabaseAdapter } from "@nodecg-release-test/database-adapter-types";
 import type express from "express";
 import type * as ExpressCore from "express-serve-static-core";
 

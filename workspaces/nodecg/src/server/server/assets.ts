@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path, { extname } from "node:path";
 
-import { rootPaths } from "@nodecg/internal-util";
+import { rootPaths } from "@nodecg-release-test/internal-util";
 import { Array, Effect, GroupBy, Stream } from "effect";
 import express from "express";
 import hasha from "hasha";
