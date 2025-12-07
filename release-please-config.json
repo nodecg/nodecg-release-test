@@ -11,13 +11,13 @@
 		}
 	],
 	"packages": {
-		"workspaces/nodecg": {},
 		"workspaces/internal-util": {
 			"skip-changelog": true
 		},
 		"workspaces/database-adapter-types": {},
 		"workspaces/database-adapter-sqlite-legacy": {},
-		"workspaces/cli": {}
+		"workspaces/cli": {},
+		"workspaces/nodecg": {}
 	},
 	"bootstrap-sha": "336f2dd77ec50c193503330a5957c81bb0261af6"
 }
