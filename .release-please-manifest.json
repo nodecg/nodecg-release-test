@@ -3,5 +3,5 @@
 	"workspaces/database-adapter-types": "20.0.0",
 	"workspaces/database-adapter-sqlite-legacy": "20.0.0",
 	"workspaces/cli": "20.0.0",
-	"workspaces/nodecg": "20.0.1"
+	"workspaces/nodecg": "20.0.2"
 }
