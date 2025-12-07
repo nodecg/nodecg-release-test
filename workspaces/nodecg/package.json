@@ -13,7 +13,7 @@
   "bugs": "https://github.com/nodecg/nodecg/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodecg/nodecg.git",
+    "url": "git+https://github.com/nodecg/nodecg-release-test.git",
     "directory": "workspaces/nodecg"
   },
   "license": "MIT",
