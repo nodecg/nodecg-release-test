@@ -1,5 +1,19 @@
 # Changelog
 
+## [20.0.1](https://github.com/nodecg/nodecg-release-test/compare/database-adapter-sqlite-legacy-v20.0.0...database-adapter-sqlite-legacy-v20.0.1) (2026-01-06)
+
+
+### Bug Fixes
+
+* aye ([f0c329e](https://github.com/nodecg/nodecg-release-test/commit/f0c329ea87102a177e42799e714b72c419ca077b))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @nodecg-release-test/internal-util bumped from 6.1.0 to 20.1.0
+
 ## [2.7.1](https://github.com/nodecg/nodecg/compare/database-adapter-sqlite-legacy-v2.7.0...database-adapter-sqlite-legacy-v2.7.1) (2025-11-22)
 
 

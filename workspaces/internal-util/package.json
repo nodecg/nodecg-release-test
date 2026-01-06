@@ -1,6 +1,6 @@
 {
   "name": "@nodecg-release-test/internal-util",
-  "version": "6.1.0",
+  "version": "20.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/nodecg/nodecg-release-test.git",
