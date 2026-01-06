@@ -1,5 +1,19 @@
 # Changelog
 
+## [20.0.3](https://github.com/nodecg/nodecg-release-test/compare/cli-v20.0.0...cli-v20.0.3) (2026-01-06)
+
+
+### Miscellaneous Chores
+
+* **cli:** Synchronize nodecg versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @nodecg-release-test/internal-util bumped from 6.1.0 to 20.1.0
+
 ## [2.7.1](https://github.com/nodecg/nodecg/compare/cli-v2.7.0...cli-v2.7.1) (2025-11-22)
 
 

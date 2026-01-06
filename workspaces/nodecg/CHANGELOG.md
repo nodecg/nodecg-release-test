@@ -1,5 +1,22 @@
 # Changelog
 
+## [20.0.3](https://github.com/nodecg/nodecg-release-test/compare/nodecg-v20.0.2...nodecg-v20.0.3) (2026-01-06)
+
+
+### Bug Fixes
+
+* aye ([f0c329e](https://github.com/nodecg/nodecg-release-test/commit/f0c329ea87102a177e42799e714b72c419ca077b))
+* ho ([9b8c0ee](https://github.com/nodecg/nodecg-release-test/commit/9b8c0ee2cc78a3b1b0fda0db169d4efb685d7d99))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @nodecg-release-test/cli bumped from 15.5.0 to 20.0.3
+    * @nodecg-release-test/database-adapter-sqlite-legacy bumped from 20.0.0 to 20.0.1
+    * @nodecg-release-test/internal-util bumped from 6.1.0 to 20.1.0
+
 ## [20.0.2](https://github.com/nodecg/nodecg-release-test/compare/nodecg-v20.0.1...nodecg-v20.0.2) (2025-12-07)
 
 
